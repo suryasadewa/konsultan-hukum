@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <title>mom</title>
+  </head>
+  <style>
+    label {
+      font-weight: bold;
+    }
+
+    body {
+      background-image: url(back.png);
+    }
+  </style>
+
+  <body>
+    <center>
+      <img src="head.JPG" alt="header" width="1140px" height="350px" />
+    </center>
+    <div style="background-color: white" class="container p-3 my-3 border">
+      <h1 class="text-center">FORM LENGKAP CLIEN DHIMAS PANDU</h1>
+
+      <form name="mom">
+        <input name="nama" type="text" placeholder="nama" id="name">
+
+        <button type="submit">Send</button>
+      </form>
+      
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyUlLW1R0cGC2BQ25E9tvh-GON2xkU44x905CMCscP7BYdQwjF1TTWmW9hwo46TAaClqA/exec'
+      const form = document.forms["mom"]
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>

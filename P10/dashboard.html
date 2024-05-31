@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biodata</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      header {
+        position: fixed;
+        background: #22242a;
+        padding: 20px;
+        inline-size: 100%;
+        block-size: 30px;
+      }
+
+      img {
+        display: block;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+      }
+
+      tbody {
+        font-size: 17px;
+        font-weight: 300;
+        color: #e8e8e8;
+      }
+
+      .tabelku {
+        inline-size: 800px;
+        margin: auto;
+        text-align: center;
+      }
+
+      .tabelb {
+        inline-size: auto;
+        margin: auto;
+      }
+
+      .left_area span {
+        color: #9f2ebb;
+      }
+
+      .left_area h3 {
+        color: #fff;
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 900;
+      }
+
+      .right_area img {
+        padding: 5px;
+        float: inline-end;
+        margin-block-start: -47px;
+        margin-inline-end: 40px;
+      }
+
+      .sidebar {
+        background: #2f323a;
+        margin-block-start: 70px;
+        padding-block-start: 30px;
+        position: fixed;
+        inset-inline-start: 0;
+        inline-size: 250px;
+        block-size: 100%;
+      }
+
+      .sidebar .profile_image {
+        inline-size: 100px;
+        block-size: 100px;
+        border-radius: 100px;
+        margin-block-end: 10px;
+      }
+
+      .sidebar h4 {
+        color: #ccc;
+        margin-block-start: 0;
+        margin-block-end: 20px;
+      }
+
+      .sidebar a {
+        color: #fff;
+        display: block;
+        inline-size: 100%;
+        line-height: 60px;
+        text-decoration: none;
+        padding-inline-start: 40px;
+        box-sizing: border-box;
+        transition: 0.5s;
+        transition-property: background;
+      }
+
+      .sidebar a:hover {
+        background: #9f2ebb;
+      }
+
+      .sidebar i {
+        padding-inline-end: 10px;
+      }
+
+      .content {
+        margin-inline-start: 250px;
+        padding-block-start: 70px;
+        background: url(bcg.jpg);
+        background-position: center;
+        background-size: cover;
+        block-size: 125vh;
+      }
+
+      .box {
+        inline-size: 740px;
+        margin: 0 auto;
+        margin-block-start: 30px;
+        box-shadow: 0 0.3rem 0.75rem rgba(5, 5, 5, 5);
+        transition: all 0.3s;
+        background-color: #591869;
+        border: solid 5px #ea92ff;
+        border-start-end-radius: 80px;
+        border-end-start-radius: 80px;
+      }
+
+      .box:hover {
+        background-color: #1f8a45;
+        border: solid 5px #4fd47e;
+        border-start-start-radius: 80px;
+        border-end-end-radius: 80px;
+        border-start-end-radius: 0px;
+        border-end-start-radius: 0px;
+      }
+
+      .footer {
+        position: fixed;
+        inset-inline-start: 0;
+        inset-block-end: 0;
+        inline-size: 100%;
+        background-color: #22242a;
+        color: #e8e8e8;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="left_area">
+        <h3>HALAMAN <span>ADMIN</span></h3>
+      </div>
+     
+      </div>
+      <div class="right_area">
+        <img src="LOGO STEMPEL2.jpg" width="50px" height="50px" />
+      </div>
+    </header>
+    <div class="sidebar">
+      <center>
+        <img src="KOTA.jpg" class="profile_image" alt="asyrof" />
+        <h4>Dhimas Pandu Putra, S.H., M.H.</h4>
+      </center>
+      <a href="tabelclien.php"><i class="fas fa-desktop"></i><span>Data Pengunjung</span></a>
+      <a href="#"
+        ><i class="fas fa-table"></i><span>Fitur API AI</span></a
+      >
+      <a href="../speech/tampil.html"
+        ><i class="fas fa-list-ul"></i><span>FITUR Catat</span></a
+      >
+      <a href="formdaftar.html"
+        ><i class="fas fa-pencil-alt"></i><span>MINUTE OF MEETING</span></a
+      >
+      <a href="index.html"
+        ><i class="fas fa-sign-out-alt"></i><span>Keluar</span></a
+      >
+    </div>
+    
+    <div class="content">
+      <div class="box">
+          <tbody>
+            
+          </tbody>
+          <p id="quote" style="font-size: 16px; font-weight: bold;">"Keadilan tanpa kebijaksanaan adalah mustahil."</p>
+          <button onclick="changeQuote()">.</button>
+      </div>
+  </div>
+  
+  <script>
+      function changeQuote() {
+          var quotes = [
+              "Keadilan tanpa kebijaksanaan adalah mustahil.",
+              "Hukum adalah pilar utama keadilan dalam masyarakat.",
+              "Ketegasan hukum harus diimbangi dengan kearifan dalam penegakan.",
+              "Setiap individu memiliki hak yang sama di mata hukum."
+          ];
+          var randomIndex = Math.floor(Math.random() * quotes.length);
+          document.getElementById("quote").innerHTML = '"' + quotes[randomIndex] + '"';
+      }
+      
+  </script>
+  
+
+    </div>
+    <div class="footer">
+      <h3>Copyright © 2023 NAWANG GITA</h3>
+    </div>
+  </body>
+</html>

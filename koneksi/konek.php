@@ -3,7 +3,7 @@
 $host = "sql12.freesqldatabase.com";
 $user = "sql12710825";
 $pass = "UWGh8qFR6w";
-$db = "sql12710825";
+$db   = "sql12710825";
 
 $conn = mysqli_connect($host, $user, $pass, $db);
 

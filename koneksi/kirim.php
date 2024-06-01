@@ -1,6 +1,6 @@
 <?php
 // Include koneksi database
-include("../konsultan-hukum/koneksi/konek.php");
+include("../KONSULTAN-HUKUM/koneksi/konek.php");
 
 // Memeriksa apakah formulir telah dikirimkan
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

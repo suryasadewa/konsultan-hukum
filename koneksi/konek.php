@@ -1,9 +1,9 @@
 <?php
 
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db = "db_gita";
+$host = "sql12.freesqldatabase.com";
+$user = "sql12710825";
+$pass = "UWGh8qFR6w";
+$db = "sql12710825";
 
 $conn = mysqli_connect($host, $user, $pass, $db);
 

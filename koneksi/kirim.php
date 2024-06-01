@@ -1,5 +1,5 @@
 <?php
-include("konek.php");     
+include("konek.ph");     
 
 // Check if all required fields are set
 if(isset($_POST['nama'], $_POST['email'], $_POST['wa'], $_POST['subjek'], $_POST['pesan'])) {

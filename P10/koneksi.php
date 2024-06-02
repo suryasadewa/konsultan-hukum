@@ -1,11 +1,11 @@
-<?php
+$hostname = 'sql12.freesqldatabase.com';
+$database = 'sql12710825';
+$username = 'sql12710825';
+$password = 'UWGh8qFR6w';
+$port = 3306;
 
-$host = "sql12.freesqldatabase.com";
-$user = "sql12710825";
-$pass = "UWGh8qFR6w";
-$db = "sql12710825";
-
-$conn = mysqli_connect($host, $user, $pass, $db);
+// Create connection
+$conn = new mysqli($hostname, $username, $password, $database, $port);
 
 if ($conn) {
     echo "";
